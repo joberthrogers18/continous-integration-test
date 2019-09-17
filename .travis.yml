@@ -9,7 +9,7 @@ script:
 deploy:
   provider: heroku
   api_key:
-    secure: 39904cb1-48ad-4856-80fc-2503edd3bed3
+    secure: $APIKEY
   app: teste-travis-node
   on:
     branch: travis
