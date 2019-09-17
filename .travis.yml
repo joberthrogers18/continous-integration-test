@@ -12,3 +12,4 @@ deploy:
   app: teste-travis-node
   on:
     repo: joberthrogers18/integration-continous-node
+    branch: travis
