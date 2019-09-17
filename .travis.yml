@@ -1,6 +1,15 @@
 language: node_js
 node_js:
   - 8.16.1
+
+cache:
+  directories:
+  - node_modules
+  - client/node_modules
+
+before-script:
+  - "npm install"
+
 script:
   - "npm run lint"
   - "npm run test"
@@ -10,3 +19,5 @@ deploy:
   api_key:
     secure: 39904cb1-48ad-4856-80fc-2503edd3bed3
   app: teste-travis-node
+  on:
+    branch: travis
