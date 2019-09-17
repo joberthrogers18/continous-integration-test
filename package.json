@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jtest",
-    "lint": "eslint src/**/*.js src/**/*.mjs",
-    "start": "node index.js"
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src/*.js",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,11 @@
   },
   "homepage": "https://github.com/joberthrogers18/integration-continous-node#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jtest": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
   }
 }
