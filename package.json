@@ -1,28 +1,30 @@
 {
-  "name": "attempt_deploy",
+  "name": "integration-continous-node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src/*.js",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/joberthrogers/attempt_deploy.git"
-  },
-  "engines": {
-    "node": "8.1.1",
-    "npm": "5.0.3"
+    "url": "git+https://github.com/joberthrogers18/integration-continous-node.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/joberthrogers/attempt_deploy/issues"
+    "url": "https://github.com/joberthrogers18/integration-continous-node/issues"
   },
-  "homepage": "https://gitlab.com/joberthrogers/attempt_deploy#readme",
+  "homepage": "https://github.com/joberthrogers18/integration-continous-node#readme",
   "dependencies": {
-    "ejs": "^2.6.2",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^24.9.0",
+    "jtest": "^0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.4.0"
   }
 }
