@@ -9,11 +9,6 @@ deploy:
   provider: heroku
   api_key:
     secure: "39904cb1-48ad-4856-80fc-2503edd3bed3"
-  username:
-    secure: "GLysfIystXsuFbDtLCZQ6FRc7qHRqAwThjDpnRoosuT4OVv1rdUzVpxSp8dQoDdUNRjdRpP5+ptjVr+OVqD30Wl5KhfP7ZmBBLb4G2F80c8o5rUu1NZAGYevO9Qdis/K9BR7aqEMfpKMVUqLAVKJTXsYLdWd9WfqMz+3QAp71ePhszDjBOYeybxIhM2FB0PhXl+krObn9p6l5p0bFw/vpAcv7Rkc3F7hOn4AWbIRByR30a6kcVUfiZOPqeI3Spj1GxUYzstH8yu5qD7qF/z/SRWGQ5rejQmzEk58sosMJ9MTLifGFue/Ak4Y+3HmVD8hQ9wQ52cCZt0HT1BfqHgFnIgyVsodXBDlhCDzTHJo95qYUDeYXOySiLquTMS95XNT4S5p5fV3hfEuyAP1gys0/0Hp5hP+wkhI0Gv5XET4uCkKifDoe5yV5eUD0SFEJqTMLfsMKW2/XfNrdkH2o5vuFxC/n0fuvV2PpjLhet5V0Z6mPziJlPcnOk6vKnLE2Xkr+ssefY8TdEuLYpUFtBfwSFxrbnOpnQdOo5S+jzSHtZ/666b6JBmKsq/OmH9+1dBk3tOqo+pn3e+r7vVLrNGjuwKMNGSErBhDOkegH5QyJmIYRizBCPm2Hz+vyE6R2pCndM3MWN4qC7P0LpmeXNVu7fZAUIoNl1JLj+HkRz8b/3k="
   app: teste-travis-node
   on:
     repo: joberthrogers18/integration-continous-node
-    branches:
-      only: 
-        - travis
