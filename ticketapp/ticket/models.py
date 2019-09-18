@@ -3,6 +3,11 @@ from django.db import models
 import uuid
 from django.contrib.auth.models import User
 
+status = (
+  ("PENDING", "Pending"),
+  ("CLOSED", 'closed'),
+)
+
 def generate_ticket_id():
     return str(uuid.uuid4()).split("-")[-1] #generate unique ticket id
 
@@ -14,6 +19,7 @@ class Ticket(models.Model):
     ticket_id = models.CharField(max_length=255, blank=True)
     created = models.DateTimeField(auto_now=True)
     modified = models.DateTimeField(auto_now_add=True)
+    status = models.CharField(choices=status, max_length=155, default='pending')
 
     def __str__(self):
         return "{} - {}".format(self.title, self.ticket_id)
