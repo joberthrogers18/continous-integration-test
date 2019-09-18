@@ -1,2 +1,7 @@
-node_modules
-*.log
+ticketapi
+venv
+env
+.env
+.vscode
+*.pyc
+__pycache__
