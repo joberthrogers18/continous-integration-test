@@ -1,15 +1,7 @@
-language: node_js
-node_js:
-  - 8.16.1
-
-script:
-  - "npm run lint"
-  - "npm run test"
-
 deploy:
-  provider: heroku
-  api_key:
-    secure: $APIKEY
-  app: teste-travis-node
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
   on:
-    branch: travis
+    branch: githubpages
