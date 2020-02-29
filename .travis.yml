@@ -1,15 +1,13 @@
 language: node_js
 node_js:
-  - 8.16.1
-
-script:
-  - "npm run lint"
-  - "npm run test"
-
+  - 7
+script: npm install
 deploy:
-  provider: heroku
-  api_key:
-    secure: $APIKEY
-  app: teste-travis-node
+- provider: azure_web_apps
+  username: fitologia
+  password: j23231215
+  site: fitobackend
+  slot: fitobackend
+  verbose: true
   on:
-    branch: travis
+    branch: azure-teste
