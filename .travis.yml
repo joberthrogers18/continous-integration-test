@@ -4,8 +4,8 @@ node_js:
 script: npm install
 deploy:
 - provider: azure_web_apps
-  username: fitologia
-  password: j23231215
+  username: $AZURE_WA_USERNAME
+  password: $AZURE_WA_PASSWORD
   site: fitobackend
   slot: fitobackend
   verbose: true

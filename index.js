@@ -6,12 +6,14 @@ console.log(PORT);
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  console.log('teste aquiiiiii')
   res.json({hello: 'world'});
 });
 
+app.get('/teste2', (req, res) => {
+  res.json({hello: 'world!!!!'});
+});
+
 app.listen(PORT, () => {
-  console.log('teste aqui')
   console.log(`Server running in port ${PORT}`)
 })
 
